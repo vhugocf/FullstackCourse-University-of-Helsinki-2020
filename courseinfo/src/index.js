@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import App from './App';
 
 
+
 // este é o vetor NOTES
 
 const notes = [
@@ -30,7 +31,7 @@ const notes = [
 
 
 
-ReactDOM.render(<App notes={notes} />, document.getElementById("root"));
+ReactDOM.render(<App notes={ notes } />, document.getElementById("root"));
 
 
 

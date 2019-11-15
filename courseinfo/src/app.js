@@ -13,10 +13,10 @@ const App = ({ notes }) => {
             note = {note}
     
         />
-    )
+    )// fim arrow note
         return(
             <>
-                <h1> Notes </h1>
+                <h1> Notes in progress... </h1>
                 <ul>
                     {rows()}
                 </ul>

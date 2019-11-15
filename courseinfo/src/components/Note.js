@@ -1,5 +1,8 @@
 import React from 'react'
 
+
+
+
 const Note = ({ note }) => {
 
     return(
@@ -8,6 +11,10 @@ const Note = ({ note }) => {
 
     )
 }// fim Note
+
+
+
+
 
 
 
