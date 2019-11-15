@@ -1,6 +1,34 @@
 import React from 'react'
+import Note from './components/Note'
 
 
-const App = 
+
+const App = ({ notes }) => {
+
+    const rows = () => notes.map(note =>
+        
+        <Note
+        
+            key = {note.id}
+            note = {note}
+    
+        />
+    )
+        return(
+            <>
+                <h1> Notes </h1>
+                <ul>
+                    {rows()}
+                </ul>
+            </>
+        )// fim return
+}// fim const
+
+
+export default App
+
+
+
+
 
 
