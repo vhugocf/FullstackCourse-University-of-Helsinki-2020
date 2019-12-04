@@ -15,12 +15,14 @@ const notes = [
     date: 2017,
     important: true
   },
+
   {
     id: 2,
     contend: "Browser can execute only Javascript",
     date: 2018,
     important: false
   },
+
   {
     id: 3,
     contend: "GET and POST are the most important methods of HTTP protocol",
@@ -31,11 +33,7 @@ const notes = [
 
 
 
-ReactDOM.render(<App notes={ notes } />, document.getElementById("root"));
-
-
-
-
+ReactDOM.render(<App notes={ notes } />,   document.getElementById("root"));
 
 
 
