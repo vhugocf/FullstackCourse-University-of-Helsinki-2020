@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
 import App from './App';
+// todos acima são necessários
+
 
 
 
@@ -18,14 +19,14 @@ const notes = [
 
   {
     id: 2,
-    contend: "Browser can execute only Javascript",
+    contend: "Browser can execute only Javascript (and WebAssembly!)",
     date: 2018,
     important: false
   },
 
   {
     id: 3,
-    contend: "GET and POST are the most important methods of HTTP protocol",
+    contend: "GET and POST are the most important methods of HTTP protocol (oh really?)",
     date: 2019,
     important: true
   }
@@ -33,8 +34,23 @@ const notes = [
 
 
 
-ReactDOM.render(<App notes={ notes } />,   document.getElementById("root"));
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// metodo final que renderiza a pagina SPA
+ReactDOM.render(<App notes={ notes } />, document.getElementById("root"));
 

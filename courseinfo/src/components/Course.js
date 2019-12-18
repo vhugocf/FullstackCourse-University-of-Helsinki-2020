@@ -1,27 +1,26 @@
-
 import React from 'react';
-
-const Course = () => {
-
+import Note from './Note';
 
 
 
+const Course = ({ course }) => {
 
 
 
     return (
-        <div>
+
+    <div>
             
-        </div>
-    );
-};
+
+       <h1> {course.name} </h1>
+
+
+    </div>
+    
+    )// fim return
+}// fim course
 
 
 
 export default Course;
-
-
-
-
-
 
