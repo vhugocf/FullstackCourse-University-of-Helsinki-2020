@@ -5,14 +5,23 @@ const Note = ({ note }) => {
 
     
     return(
+    <>
+        <ul>
+        <li> 
+            {note.id}
+            {note.contend}
+            {note.date}
+            {note.date}
+        </li>
+        
+       </ul>
 
-        <li> {note.contend} </li>
-
+      
+            
+     
+    </>
     )
 }// fim Note
-
-
-
 
 
 

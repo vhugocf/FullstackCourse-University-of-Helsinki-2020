@@ -1,11 +1,11 @@
 import React from 'react'
 
-//import Note from './components/Note'
-//import Course from './components/Course'
+import Note from './components/Note'
+import Course from './components/Course'
 
 
 /* //////////////////////////////////////////
-///////        TUDO FUNCIONANDO
+     TUDO FUNCIONANDO
 const App = ({ notes }) => {
     const rows = () => notes.map(note =>
         
@@ -29,9 +29,7 @@ const App = ({ notes }) => {
 TUDO FUNCIONANDO
 *////////////////////////////////
 
-
-
-/*
+/* ///////////////////////////////////////////
 const App = () => {
 
     const course = {
@@ -67,39 +65,53 @@ const App = () => {
     )
 
 }// fim App
-*////////////// PODE SER UTIL
-////////////////////////////////////////////////////
+*/ ///////////// PODE SER UTIL
 
 
 
 
+    // VAMOS DESESTRUTURAR ABAIXO para simplificar!
+    //const App = (props) => {
+    //const { notes } = props
+    // ABAIXO ESTA DESESTRUTURADO
+    const App = ({ notes }) => {
 
-const App = (props) => {
-    const { notes } = props
+    const linhas = () => notes.map(notess =>
+    
+        // NAO É NECESSÁRIO NA DESESTRUTURAÇÃO
+        //<ul>
 
+// aqui precisamos usar o key atribute 'note.id' dos objetos no array para saber como re-renderizar o componente, é uma exigencia do REACT
+        // <li key = {note.id}>  
+        //{note.contend}
+        // </li>
+     
+        
+         <Note key={notess.id}
+               note={notess}
+         />
 
-    const linhas = () => 
-    notes.map(note => <li key = {note.id}>  {note.contend} </li>)
+        
+         )// final MAP
+
 
     // a variavel RESULTADO esta recebendo o vetor NOTES e nele usamos a função MAP()
     // que dentro do seu argumento ( ) - há uma arrow function que pode ter qualquer nome
-    // mas precisa chamar através do ponto " . " p/ acessar o conteudo do vetor
-    const resultado = notes.map(notettt => notettt.contend)
-    console.log(resultado)
-
-
+    // mas precisa chamar através do ponto " . " p/ acessar o conteudo do vetor...
+    // SIM! VAMOS USAR UMA FUNÇÃO QUE CHAMA OUTRA FUNÇÃO COMO ARGUMENTO
+    //const resultado = notes.map(notettt => notettt.contend)
+   // console.log(resultado)
 
     return(
         <>
-
             <h1> Notes </h1>
 
-            <br></br>
-
             <ul>
-              { linhas() }
+              {linhas()}
             </ul>
 
+
+            
         </>
     )// fim return
 
