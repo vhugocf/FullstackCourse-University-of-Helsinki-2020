@@ -3,28 +3,25 @@ import React from 'react'
 
 const Note = ({ note }) => {
 
-    
+
+
+
     return(
     <>
-        <ul>
+        <ol>
         <li> 
-            {note.id}
+           
             {note.contend}
-            {note.date}
-            {note.date}
-        </li>
-        
-       </ul>
 
-      
-            
-     
+            {note.date}
+
+        </li>
+       </ol>
+
+
     </>
     )
 }// fim Note
-
-
-
 
 
 

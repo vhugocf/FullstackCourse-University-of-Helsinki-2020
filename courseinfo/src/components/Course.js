@@ -1,21 +1,19 @@
 import React from 'react';
-import Note from './Note';
+//import Note from './Note';   nao usa!
 
 
 
 const Course = ({ course }) => {
 
-
-
     return (
 
-    <div>
+    <>
             
 
        <h1> {course.name} </h1>
 
 
-    </div>
+    </>
     
     )// fim return
 }// fim course

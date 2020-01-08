@@ -6,8 +6,7 @@ import App from './App';
 
 
 
-// este é o vetor NOTES
-
+// este é o vetor NOTES ----- TUDO AQUI FUNCIONANDO
 const notes = [
 
   {
@@ -31,16 +30,6 @@ const notes = [
     important: true
   }
 ] // fim notes
-
-
-
-
-
-
-
-
-
-
 
 
 

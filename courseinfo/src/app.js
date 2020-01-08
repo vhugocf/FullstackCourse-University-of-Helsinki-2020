@@ -72,26 +72,22 @@ const App = () => {
 
     // VAMOS DESESTRUTURAR ABAIXO para simplificar!
     //const App = (props) => {
-    //const { notes } = props
+    //const { notes } = props  --- SE TRANSFORMA EM...
+
     // ABAIXO ESTA DESESTRUTURADO
     const App = ({ notes }) => {
 
     const linhas = () => notes.map(notess =>
     
-        // NAO É NECESSÁRIO NA DESESTRUTURAÇÃO
-        //<ul>
-
-// aqui precisamos usar o key atribute 'note.id' dos objetos no array para saber como re-renderizar o componente, é uma exigencia do REACT
+        // aqui precisamos usar o key atribute 'note.id' dos objetos no array para saber como re-renderizar o componente, é uma exigencia do REACT
         // <li key = {note.id}>  
         //{note.contend}
         // </li>
      
-        
+        // aqui precisa ter o key={notess.id} por causa do react p/ saber como renderizar
          <Note key={notess.id}
                note={notess}
          />
-
-        
          )// final MAP
 
 
@@ -109,12 +105,9 @@ const App = () => {
             <ul>
               {linhas()}
             </ul>
-
-
             
         </>
     )// fim return
-
 }// final App
 
 
