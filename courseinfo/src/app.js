@@ -1,69 +1,69 @@
-import React from 'react'
+import React from "react";
 
-import Course from './components/Course'
+import Course from "./components/Course";
 
+const App = () => {
+  const courses = [
+    {
+      // inicio do 1º registro do vetor
+      name: "Half Stack application development",
 
-const App = () =>{
-
-    const courses = [
-        {// inicio do 1º registro do vetor
-            name: 'Half Stack application development',
-    
-            parts: [
-
-              {
-                name: 'Fundamentals of React',
-                exercises: 10,
-                id: 1
-              },
-              {
-                name: 'Using props to pass data',
-                exercises: 7,
-                id: 2
-              },
-              {
-                name: 'State of a component',
-                exercises: 14,
-                id: 3
-              },
-              {
-                name: 'Redux',
-                exercises: 11,
-                id: 4  
-              }
-            ]// fim vetor 1
-        
-        }, // final primeiro registro do vetor
-
-        { // inicio do segundo registro do vetor
-                name: 'Node.js',
-                id:2,
-                parts: [
-                    {
-                        name: 'Routing',
-                        exercises: 3,
-                        id: 1
-                    },
-                    {
-                        name: 'Middlewares',
-                        exercises: 7,
-                        id: 2
-                    }
-                ]// fim parts 
+      parts: [
+        {
+          name: "Fundamentals of React",
+          exercises: 10,
+          id: 1
+        },
+        {
+          name: "Using props to pass data",
+          exercises: 7,
+          id: 2
+        },
+        {
+          name: "State of a component",
+          exercises: 14,
+          id: 3
+        },
+        {
+          name: "Redux",
+          exercises: 11,
+          id: 4
         }
+      ] // fim de parts 1
+    }, // final primeiro registro do vetor
 
-    ];
-    
-    return(
-        <>
-            {courses.map}
-        
-        
-        </>
+    {
+      // inicio do segundo registro do vetor
+      name: "Node.js",
+      id: 2,
+      parts: [
+        {
+          name: "Routing",
+          exercises: 3,
+          id: 1
+        },
+        {
+          name: "Middlewares",
+          exercises: 7,
+          id: 2
+        }
+      ] // fim parts
+    } // fim do segundo registro do vetor
+  ]; /// FIM GERAL DO CONST COURSE;
 
+  return (
+    <>
+      {courses.map(course => (
+        <Course course={course} key={course.id}>
+          {" "}
+        </Course>
+      ))}
+    </>
+  );
+}; //// FIM
 
+export default App;
 
-    )
 
 
 
@@ -71,103 +71,7 @@ const App = () =>{
 
 
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export default App
-
-
-
-
-/*
+/* IGNORE BELOW PLEASE
     // VAMOS DESESTRUTURAR ABAIXO para simplificar!
     //const App = (props) => {
     //const { notes } = props  --- SE TRANSFORMA EM...
@@ -212,6 +116,3 @@ export default App
 export default App
 
 */
-
-
-
