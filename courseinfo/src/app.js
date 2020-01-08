@@ -1,75 +1,173 @@
 import React from 'react'
 
-import Note from './components/Note'
 import Course from './components/Course'
 
 
-/* //////////////////////////////////////////
-     TUDO FUNCIONANDO
-const App = ({ notes }) => {
-    const rows = () => notes.map(note =>
-        
+const App = () =>{
 
-        <Note
-            key = {note.id}
-            note = {note}
-        />
-    )// fim dos arrows notes
+    const courses = [
+        {// inicio do 1º registro do vetor
+            name: 'Half Stack application development',
+    
+            parts: [
 
-        return(
-            <>
-                <h1> Notes in progress... </h1>
-                <ul>
-                    {rows()}
-                </ul>
-            </>
-        )// fim return
-
-}// fim const
-TUDO FUNCIONANDO
-*////////////////////////////////
-
-/* ///////////////////////////////////////////
-const App = () => {
-
-    const course = {
-
-        name: 'Half Stack application development',
-        parts: [
-            {
-                name: 'Fundaments of React',
+              {
+                name: 'Fundamentals of React',
                 exercises: 10,
                 id: 1
-            },
-            {
-                name: 'using props to pass data',
+              },
+              {
+                name: 'Using props to pass data',
                 exercises: 7,
                 id: 2
-            },
-            {
+              },
+              {
                 name: 'State of a component',
                 exercises: 14,
                 id: 3
-            }
-        ]// fim parts
-    }// fim course
+              },
+              {
+                name: 'Redux',
+                exercises: 11,
+                id: 4  
+              }
+            ]// fim vetor 1
+        
+        }, // final primeiro registro do vetor
 
+        { // inicio do segundo registro do vetor
+                name: 'Node.js',
+                id:2,
+                parts: [
+                    {
+                        name: 'Routing',
+                        exercises: 3,
+                        id: 1
+                    },
+                    {
+                        name: 'Middlewares',
+                        exercises: 7,
+                        id: 2
+                    }
+                ]// fim parts 
+        }
 
+    ];
+    
     return(
         <>
-
-            <Course course = {course.parts}> </Course>
-           
-
+            {courses.map}
+        
+        
         </>
+
+
+
     )
 
-}// fim App
-*/ ///////////// PODE SER UTIL
 
 
 
 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export default App
+
+
+
+
+/*
     // VAMOS DESESTRUTURAR ABAIXO para simplificar!
     //const App = (props) => {
     //const { notes } = props  --- SE TRANSFORMA EM...
@@ -112,5 +210,8 @@ const App = () => {
 
 
 export default App
+
+*/
+
 
 
