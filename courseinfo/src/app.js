@@ -2,8 +2,13 @@ import React from "react";
 
 import Course from "./components/Course";
 
+
+
+
 const App = () => {
+
   const courses = [
+
     {
       // inicio do 1º registro do vetor
       name: "Half Stack application development",
@@ -14,11 +19,13 @@ const App = () => {
           exercises: 10,
           id: 1
         },
+
         {
           name: "Using props to pass data",
           exercises: 7,
           id: 2
         },
+
         {
           name: "State of a component",
           exercises: 14,
@@ -51,18 +58,27 @@ const App = () => {
     } // fim do segundo registro do vetor
   ]; /// FIM GERAL DO CONST COURSE;
 
+
+
   return (
     <>
-      {courses.map(course => (
+
+      {courses.map((course) => 
         <Course course={course} key={course.id}>
-          {" "}
         </Course>
-      ))}
+      )}
+
     </>
-  );
-}; //// FIM
+  )
+
+}//// FIM
+
+
+
 
 export default App;
+
+
 
 
 
@@ -116,3 +132,19 @@ export default App;
 export default App
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
