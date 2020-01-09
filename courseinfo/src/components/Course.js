@@ -1,27 +1,31 @@
 import React from 'react';
-import Header from './Header'
+import Header from './components/Header';
+import Contend from './components/Contend'
 
-
-//import Note from './Note';   nao usa!
 
 
 
 const Course = ({ course }) => {
 
+
+
     return (
-
     <>
-            
 
-       <h1> {course.name} </h1>
-
+            <Header course = { course }> </Header>
+            <Contend course = { course }> </Contend>
 
     </>
     
     )// fim return
+
 }// fim course
 
 
 
+
 export default Course;
+
+
+
 
