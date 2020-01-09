@@ -16,4 +16,5 @@ const Contend = ({ course }) => {
   );
 };
 
+
 export default Contend;
