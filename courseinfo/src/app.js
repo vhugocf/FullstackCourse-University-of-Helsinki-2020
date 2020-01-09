@@ -10,6 +10,7 @@ const App = () => {
   const courses = [
 
     {
+      title: "Web Development Curriculum", 
       // inicio do 1º registro do vetor
       name: "Half Stack application development",
 
