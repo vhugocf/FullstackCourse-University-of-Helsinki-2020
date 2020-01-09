@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from './components/Header';
-import Contend from './components/Contend'
+
+import Header from './Header';
+import Content from './Content';
 
 
 
@@ -13,7 +14,7 @@ const Course = ({ course }) => {
     <>
 
             <Header course = { course }> </Header>
-            <Contend course = { course }> </Contend>
+            <Content course = { course }> </Content>
 
     </>
     

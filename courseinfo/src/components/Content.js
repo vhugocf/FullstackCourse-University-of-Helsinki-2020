@@ -1,8 +1,9 @@
 import React from 'react';
+
 import Part from './Part';
 
 
-const Content = ( {course} ) => {
+const Content = ( { course } ) => {
 
     return (
         <>
@@ -11,13 +12,11 @@ const Content = ( {course} ) => {
         
         <Part key={part.name} part={part.name} exercises={part.exercises}/>  )}
         
-        
 
         </>
+    );
+};
 
-    )
-
-}
 
 
 export default Content;
