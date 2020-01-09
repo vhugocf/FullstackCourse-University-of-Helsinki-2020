@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import Course from "./components/Course";
+import Course from './components/Course';
 
 
 
@@ -64,8 +64,7 @@ const App = () => {
     <>
 
       {courses.map((course) => 
-        <Course course={course} key={course.id}>
-        </Course>
+        <Course course={course} key={course.id}> </Course>
       )}
 
     </>
@@ -77,6 +76,11 @@ const App = () => {
 
 
 export default App;
+
+
+
+
+
 
 
 

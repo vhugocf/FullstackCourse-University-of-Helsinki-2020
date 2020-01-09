@@ -1,23 +1,27 @@
-import React from 'react';
+import React from "react";
+
+
+const Total = ({ course }) => {
+
+  const total = course.parts
+    .map(part => part.exercises)
+    .reduce((sum, valorCorrente) => sum + valorCorrente);
 
 
 
+  return (
+    <>
 
-const Total = ( {course} ) => {
+      <h1> Total number of exercises  { total } </h1>
 
+    </>
+  );
 
-    const total = course.parts.map((part) => part.exercises).reduce((sum, currentValue) => sum + currentValue) 
-
-    
-    return (
-        <>
-
-    <h3> Number of exercises: { total } </h3>
-
-        </>
-    );
 };
 
+
+
 export default Total;
+
 
 
