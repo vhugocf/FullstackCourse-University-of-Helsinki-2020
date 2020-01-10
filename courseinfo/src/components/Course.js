@@ -15,6 +15,8 @@ const Course = ({ course }) => {
 
             <Header course =  { course } >    </Header>
             <Content course = { course } >    </Content>
+          
+
             <Total course =   { course } >    </Total>
 
     </>

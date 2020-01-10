@@ -1,16 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import Course from './components/Course';
-
-
-
+import Course from "./components/Course";
 
 const App = () => {
 
   const courses = [
 
     {
-      title: "Web Development Curriculum", 
+      title: "Web Development Curriculum...",
       // inicio do 1º registro do vetor
       name: "Half Stack application development",
 
@@ -32,6 +29,7 @@ const App = () => {
           exercises: 14,
           id: 3
         },
+
         {
           name: "Redux",
           exercises: 11,
@@ -59,26 +57,18 @@ const App = () => {
     } // fim do segundo registro do vetor
   ]; /// FIM GERAL DO CONST COURSE;
 
-
-
   return (
     <>
-
-      {courses.map((course) => 
-        <Course course={course} key={course.id}> </Course>
-      )}
-
+      {courses.map(course => (
+        <Course course={course} key={course.id}>
+          {" "}
+        </Course>
+      ))}
     </>
-  )
-
-}//// FIM
-
-
-
+  );
+}; //// FIM
 
 export default App;
-
-
 
 
 
@@ -137,19 +127,3 @@ export default App;
 export default App
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
