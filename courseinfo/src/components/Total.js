@@ -11,7 +11,7 @@ const Total = ({ course }) => {
   return (
     <>
       <i>   
-        <h4> Total number of exercises in this section: {total} </h4>{" "}
+        <h4> Total number of exercises in this section: {total} </h4>
       </i>
     </>
   );
